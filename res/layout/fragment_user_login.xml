@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:orientation="vertical" android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/login_fragment_signin_title" android:height="50.0dip" />
+                <EditText android:id="@id/email" android:layout_width="fill_parent" android:layout_height="60.0dip" android:hint="@string/prompt_email" android:maxLines="1" android:singleLine="true" android:maxLength="50" android:inputType="textEmailAddress" />
+                <EditText android:id="@id/password" android:layout_width="fill_parent" android:layout_height="60.0dip" android:hint="@string/prompt_password" android:maxLines="1" android:singleLine="true" android:maxLength="50" android:inputType="textPassword" android:imeOptions="actionDone" />
+                <Button android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/email_sign_in_button" android:background="@drawable/red_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Sign In" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_fragment_forgot_pwd" />
+                    <TextView android:textColor="@color/red_actionbar" android:id="@id/forgot_pwd_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/login_fragment_forgot_pwd_link" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout1" android:background="#ff000000" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/login_fragment_dont_have_sp_account_yet" />
+                <Button android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/register" android:background="@drawable/user_button_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Register" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/progressBar" layout="@layout/progressbar" />
+</FrameLayout>

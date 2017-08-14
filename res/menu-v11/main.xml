@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/icon_find_white" android:id="@id/search" android:title="@string/search_title" app:showAsAction="collapseActionView|ifRoom" app:actionViewClass="android.support.v7.widget.SearchView" />
+    <item android:icon="@drawable/icon_point" android:id="@id/action_show_my_location" android:visible="false" android:title="@string/action_show_my_location" app:showAsAction="ifRoom" />
+</menu>

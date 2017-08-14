@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/lot_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/map_container" android:layout_width="fill_parent" android:layout_height="470.0dip">
+                <RelativeLayout android:id="@id/map" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+                <ImageView android:id="@id/lot_direcction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:src="@drawable/attraction_direction_selector" android:layout_alignParentRight="true" />
+                <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="270.0dip" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/parent_company_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/standard_parking_logo_text" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/attraction_address" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="20.0dip" />
+                        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/lot_detail_entrance" />
+                        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/entrance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <TextView android:textSize="20.0dip" android:id="@id/warning_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="30.0dip" />
+            <TextView android:textSize="22.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center" android:id="@id/barcode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/barcode_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="15.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/coupon_rates_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/lot_detail_coupon_rates" />
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:id="@id/rates_bullet_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" />
+            <Button android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/activate_cupon" android:background="@drawable/red_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="30.0dip" android:text="@string/coupon_detail_activate_coupon" />
+            <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="15.0dip" />
+            <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/coupon_detail_instructions" />
+            <TextView android:textSize="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="30.0dip" android:text="@string/coupon_detail_instructions_text" />
+            <LinearLayout android:orientation="vertical" android:id="@id/expiration_section" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="15.0dip" />
+                <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/coupon_detail_expiration" />
+                <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/expiration_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginBottom="30.0dip" android:text="Oct 13, 2014 at 11:00pm" />
+                <Button android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/report_issue" android:background="@drawable/red_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/coupon_detail_report_issue" />
+                <Button android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/delete_coupon" android:background="@drawable/black_button_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/coupon_detail_delete_coupon" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/progressBar" layout="@layout/progressbar" />
+</FrameLayout>

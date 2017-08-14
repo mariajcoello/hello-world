@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/palette_2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_width="150.0dip" android:layout_height="50.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/apptheme_progress_indeterminate_horizontal_holo_light" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:animationResolution="700" style="@style/AppTheme.ActionBar" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/edit_name" android:padding="@dimen/activity_horizontal_margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/placeClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_black" android:text="Close" android:layout_alignParentLeft="true" style="@style/ImageButtonIconsAppTheme" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/eventDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18 de Mayo" style="@style/ListItemTitleHighlight" />
+        <TextView android:textSize="24.0dip" android:textColor="@color/palette_4" android:layout_gravity="center" android:id="@id/hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/icon_horizontal_margin" android:layout_marginRight="@dimen/icon_horizontal_margin" android:text="9:00 AM" />
+        <TextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/eventTitle" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Consulta médica" style="@style/ListItemTitle" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/placeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nombre_del_Lugar" style="@style/Subhead" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/placeAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dirección" style="@style/Body" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/placePhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Teléfono" style="@style/Body" />
+        <View android:background="@color/separatorDark" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/activity_horizontal_margin_small" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/placeHours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Recordatorio: 1hs antes" style="@style/Body" />
+        <View android:background="@color/separatorDark" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/activity_horizontal_margin_small" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="center" android:id="@id/eventDelete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Borrar" style="@style/ButtonCallToActionSecondary" />
+            <Button android:id="@id/eventEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="EDITAR" android:layout_alignParentRight="true" style="@style/ButtonCallToAction" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

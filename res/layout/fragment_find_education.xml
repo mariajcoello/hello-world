@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:tag="andoid_scroll_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/separatorList" android:dividerHeight="1.0dip" />
+    <TextView android:id="@id/empty" android:text="No tenes eventos" style="@style/EmptyDetailText" />
+    <include android:id="@id/progressBar" layout="@layout/progressbar" />
+</FrameLayout>

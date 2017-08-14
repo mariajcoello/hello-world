@@ -1,0 +1,33 @@
+.class public final Lcom/MspAppCentros/national/R$anim;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final abc_fade_in:I = 0x7f040000
+
+.field public static final abc_fade_out:I = 0x7f040001
+
+.field public static final abc_slide_in_bottom:I = 0x7f040002
+
+.field public static final abc_slide_in_top:I = 0x7f040003
+
+.field public static final abc_slide_out_bottom:I = 0x7f040004
+
+.field public static final abc_slide_out_top:I = 0x7f040005
+
+.field public static final sun_rise:I = 0x7f040006
+
+.field public static final sun_rise1:I = 0x7f040007
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

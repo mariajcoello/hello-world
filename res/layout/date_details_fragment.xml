@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/palette_2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/notifArea" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ListView android:id="@android:id/list" android:tag="andoid_scroll_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/separatorList" android:dividerHeight="1.0dip" />
+        </LinearLayout>
+        <TextView android:id="@id/empty" android:text="No tenés eventos" style="@style/EmptyDetailText" />
+        <RelativeLayout android:gravity="end|bottom|center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/addevent" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/ButtonFloating" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="end|bottom|center" android:id="@id/buttonWrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/white_shadow" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip">
+                <Button android:textSize="18.0dip" android:id="@id/pill" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Pastillas" style="@style/ButtonCallToAction" />
+                <Button android:textSize="18.0dip" android:id="@id/menst" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ciclo Menstrual" style="@style/ButtonCallToAction" />
+                <Button android:textSize="18.0dip" android:id="@id/doctor" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cita Médica" style="@style/ButtonCallToAction" />
+                <Button android:textSize="18.0dip" android:id="@id/sexual" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Actividad Sexual" style="@style/ButtonCallToAction" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

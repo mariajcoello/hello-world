@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/bottomBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:gravity="center_vertical" android:id="@id/show1" android:background="@color/palette_4" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="MOSTRAR / FILTRAR" style="@style/ButtonBottomBar" />
+        <com.MspAppCentros.national.Sliding android:orientation="vertical" android:id="@id/sliding1" android:padding="@dimen/activity_horizontal_margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/show1">
+            <Switch android:id="@id/Private" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="Privado" />
+            <Switch android:id="@id/Public" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="Público" />
+        </com.MspAppCentros.national.Sliding>
+    </RelativeLayout>
+    <include android:id="@id/progressBar" layout="@layout/progressbar" />
+</FrameLayout>

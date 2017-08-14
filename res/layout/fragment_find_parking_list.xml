@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/palette_2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:tag="andoid_scroll_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="56.0dip" android:divider="@color/separatorList" android:dividerHeight="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/palette_4_light" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/buttonAlpha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="Alfabético" style="@style/ButtonBottomBar" />
+        <Button android:id="@id/buttonDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:text="Distancia" style="@style/ButtonBottomBar" />
+    </LinearLayout>
+    <TextView android:id="@id/empty" android:paddingLeft="40.0dip" android:paddingRight="40.0dip" android:text="@string/no_lots_found" style="@style/EmptyDetailText" />
+</RelativeLayout>

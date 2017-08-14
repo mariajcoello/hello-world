@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact_department_array">
+        <item>General Question</item>
+        <item>Customer Service</item>
+        <item>Technical Support</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="contact_issue_array">
+        <item>Cashier did not accept coupon</item>
+        <item>Coupon already used error</item>
+        <item>Computer did not accept coupon</item>
+        <item>Rate was different</item>
+        <item>Cashier required printed coupon</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="filters">
+        <item>Pre-Purchased Accepted</item>
+        <item>Mobile Coupons Accepted</item>
+        <item>Motorcycle Parking</item>
+        <item>Oversized Parking</item>
+        <item>Valet Parking</item>
+    </string-array>
+    <string-array name="filters_url_keys">
+        <item>reservation</item>
+        <item>coupon</item>
+        <item>motorcycle</item>
+        <item>oversize</item>
+        <item>valet</item>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@drawable/icons_search_aa</item>
+        <item>@drawable/icons_coupon_a</item>
+        <item>@drawable/icons_compas_a</item>
+        <item>@drawable/icons_myfavorites</item>
+        <item></item>
+        <item>@drawable/icons_signin_a</item>
+        <item>@drawable/icons_register_a</item>
+        <item>@drawable/icons_settings</item>
+        <item>@drawable/icons_help_a</item>
+        <item>@drawable/icons_logout</item>
+    </array>
+    <string-array name="nav_drawer_items">
+        <item>Find Parking</item>
+        <item>My Coupons</item>
+        <item>Where I Parked</item>
+        <item>My Favorites</item>
+        <item></item>
+        <item>Sign In</item>
+        <item>Register</item>
+        <item>Settings</item>
+        <item>Support</item>
+        <item>Log Out</item>
+    </string-array>
+</resources>

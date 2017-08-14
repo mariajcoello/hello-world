@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="72.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ic_mens" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin_small" android:src="@drawable/ic_mens" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ic_activity" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin_small" android:src="@drawable/ic_activity" />
+        <TextView android:textSize="24.0dip" android:textColor="@color/palette_4" android:gravity="center" android:layout_gravity="center" android:id="@id/hour" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:text="9:00 AM" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/icon_horizontal_margin" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gateway Garage" android:maxLines="1" style="@style/Subhead" />
+                    <TextView android:textSize="15.0dip" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123 main street Tel.: 2949 99599" style="@style/Body" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center|right" android:id="@id/arrow_right" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/icon_horizontal_margin" android:layout_marginRight="@dimen/icon_horizontal_margin" android:src="@drawable/list_view_right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

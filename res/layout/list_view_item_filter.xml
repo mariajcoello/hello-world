@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/border_bottom_filter" android:layout_width="fill_parent" android:layout_height="90.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/abc_action_bar_title_text_size" android:textColor="#ffffffff" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Pre-Purchased Accepted" />
+    <LinearLayout android:gravity="center|right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <ToggleButton android:layout_gravity="right" android:id="@id/toggleButton" android:background="@drawable/ic_toggle_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/toggleButton" />
+    </LinearLayout>
+</LinearLayout>

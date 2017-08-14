@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="10.0dip" android:bottom="1.0dip">
+        <shape android:shape="oval">
+            <solid android:color="@color/calendar_m_21" />
+            <padding android:bottom="1.0dip" />
+            <size android:height="5.0dip" android:width="5.0dip" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/calendar_dot" android:left="10.0dip" />
+</layer-list>

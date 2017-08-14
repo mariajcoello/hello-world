@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="start" android:background="@color/transparent" android:layout_width="@dimen/navigation_drawer_width" android:layout_height="fill_parent">
+        <fragment android:name="com.MspAppCentros.national.ButtonsNavigationFragment" android:id="@id/f" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

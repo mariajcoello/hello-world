@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/edit_name" android:padding="@dimen/activity_horizontal_margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/placeClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_black" android:text="Close" android:layout_alignParentLeft="true" style="@style/ImageButtonIconsAppTheme" />
+        <ImageButton android:id="@id/placeShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_share_black" android:text="Share" android:layout_alignParentRight="true" style="@style/ImageButtonIconsAppTheme" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:padding="@dimen/activity_horizontal_margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/placeTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Centro de saludCentro de salud" style="@style/ListItemTitleHighlight" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/placeAddress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dirección" style="@style/Body" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/placeCity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Departamento" style="@style/Subhead" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/placePhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="Teléfono" style="@style/Body" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/placeHours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="horarios" style="@style/Body" />
+        <View android:background="@color/separatorDark" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/activity_horizontal_margin_small" />
+        <Button android:layout_gravity="center" android:id="@id/placeCall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LLAMAR" style="@style/ButtonCallToActionBig" />
+    </LinearLayout>
+</LinearLayout>

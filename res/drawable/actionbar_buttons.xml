@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector android:exitFadeDuration="@android:integer/config_mediumAnimTime"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:background="@color/transparent" android:drawable="@drawable/icn_02" />
+    <item android:state_pressed="true" android:background="@color/palette_3" android:drawable="@drawable/icn_02" />
+    <item android:state_selected="true" android:background="@color/black" android:drawable="@drawable/icn_02" />
+</selector>

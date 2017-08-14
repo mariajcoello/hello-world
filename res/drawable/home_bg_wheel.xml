@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate android:fromDegrees="-135.0" android:toDegrees="-135.0" android:pivotX="38.0%" android:pivotY="25.0%">
+            <shape android:shape="rectangle">
+                <solid android:color="#aafefefe" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <rotate android:fromDegrees="-320.0" android:toDegrees="-320.0" android:pivotX="129.99878%" android:pivotY="104.99878%">
+            <shape android:shape="rectangle">
+                <solid android:color="#aae1e6e9" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <rotate android:fromDegrees="-315.0" android:toDegrees="-315.0" android:pivotX="-79.99999%" android:pivotY="60.000004%">
+            <shape android:shape="rectangle">
+                <solid android:color="#aae0f3fc" />
+            </shape>
+        </rotate>
+    </item>
+    <item android:right="10.0dip">
+        <rotate android:fromDegrees="45.0" android:toDegrees="45.0" android:pivotX="-25.0%" android:pivotY="0.0%">
+            <shape android:shape="rectangle">
+                <solid android:color="#ffeef8fd" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

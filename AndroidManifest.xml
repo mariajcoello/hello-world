@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.mspAppCentros.national" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.MspAppCentros.national.common.MyApplication" android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB-de5rK8peAv6YTmwMHTFMKJGzm9kAEIg"/>
+        <activity android:label="@string/app_name" android:name="com.MspAppCentros.national.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="MSP" android:name="com.MspAppCentros.national.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.app.default_searchable" android:value=".SearchActivity"/>
+        </activity>
+        <activity android:name="com.MspAppCentros.national.SearchActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.MspAppCentros.national.SpecialDateActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="6a89b72548e53199e054f11cf34878712ff59301"/>
+        <provider android:authorities="com.mySpecialPlaces.national.DbProvider" android:name="com.MspAppCentros.national.provider.DbProvider"/>
+        <receiver android:name="com.MspAppCentros.national.AlarmReceiver"/>
+        <receiver android:enabled="true" android:name="com.MspAppCentros.national.DeviceBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
